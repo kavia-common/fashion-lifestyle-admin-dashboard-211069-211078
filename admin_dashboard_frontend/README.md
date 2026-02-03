@@ -1,82 +1,35 @@
-# Lightweight React Template for KAVIA
+# Fashion/Lifestyle Admin Dashboard (React + Tailwind)
 
-This project provides a minimal React template with a clean, modern UI and minimal dependencies.
+Desktop-optimized admin dashboard built with React, Tailwind CSS, client-side routing, and realistic mock data services.
 
-## Features
+## What’s included
 
-- **Lightweight**: No heavy UI frameworks - uses only vanilla CSS and React
-- **Modern UI**: Clean, responsive design with KAVIA brand styling
-- **Fast**: Minimal dependencies for quick loading times
-- **Simple**: Easy to understand and modify
+- Tailwind CSS + PostCSS configured for CRA (`tailwind.config.js`, `postcss.config.js`, `src/index.css`)
+- App shell layout:
+  - Collapsible left sidebar
+  - Top header (search + quick actions)
+  - Main content area with routing
+  - Optional contextual right panel (shown on key routes)
+- Pages:
+  - Dashboard, Orders, Products, Customers, Inventory, Discounts, Analytics, Settings
+- Shared UI components:
+  - Cards, tables, badges, forms, modals, dropdowns, pagination
+- Mock services:
+  - `productsService`, `ordersService`, `customersService`, `analyticsService`
 
-## Getting Started
+## Dev
 
-In the project directory, you can run:
+Use the existing CRA scripts (unchanged):
 
-### `npm start`
+- `npm start`
+- `npm test`
+- `npm run build`
 
-Runs the app in development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Notes
 
-### `npm test`
+This project uses a light modern theme with:
+- Primary: `#3b82f6`
+- Success: `#06b6d4`
+- Neutral grays (Tailwind slate)
 
-Launches the test runner in interactive watch mode.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-## Customization
-
-### Colors
-
-The main brand colors are defined as CSS variables in `src/App.css`:
-
-```css
-:root {
-  --kavia-orange: #E87A41;
-  --kavia-dark: #1A1A1A;
-  --text-color: #ffffff;
-  --text-secondary: rgba(255, 255, 255, 0.7);
-  --border-color: rgba(255, 255, 255, 0.1);
-}
-```
-
-### Components
-
-This template uses pure HTML/CSS components instead of a UI framework. You can find component styles in `src/App.css`. 
-
-Common components include:
-- Buttons (`.btn`, `.btn-large`)
-- Container (`.container`)
-- Navigation (`.navbar`)
-- Typography (`.title`, `.subtitle`, `.description`)
-
-## Learn More
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Mock services simulate small network latency for more realistic UI behavior.
